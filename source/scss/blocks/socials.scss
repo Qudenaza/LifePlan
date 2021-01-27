@@ -1,0 +1,25 @@
+.socials {
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 34px;
+    }
+  }
+
+  &__link {
+    &:hover svg {
+      fill: #6188ff;
+    }
+  }
+
+  & svg {
+    transition: all 0.3s ease;
+  }
+}

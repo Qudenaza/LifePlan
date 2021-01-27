@@ -1,0 +1,25 @@
+.page-footer {
+  min-height: 287px;
+  padding: 96px 0 20px 0;
+
+  border-top: 1px solid #d8e3fe;
+
+  &__container {
+    max-width: 1206px;
+    margin: 0 auto;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin: 28px 0 0 100px;
+
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    color: #aeb8d0;
+  }
+}

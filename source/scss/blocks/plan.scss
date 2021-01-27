@@ -1,0 +1,60 @@
+.plan {
+  padding: 20px 0;
+  min-height: 447px;
+  background: url("../img/plan-clouds.png") no-repeat, linear-gradient(to bottom, #6888ff, #5e80ff);
+  background-position: center;
+
+  &__container {
+    max-width: 712px;
+    padding: 66px 20px 20px 20px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__heading {
+    color: inherit;
+  }
+
+  &__title {
+    margin-top: 15px;
+
+    color: inherit;
+    font-weight: 400;
+
+    & b {
+      font-weight: 600;
+    }
+  }
+
+  &__text {
+    margin-top: 24px;
+
+    line-height: 1.8;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  &__buttons {
+    margin-top: 54px;
+  }
+
+  &__button {
+    width: 130px;
+
+    background: #ffffff;
+    color: #565f82;
+    border: 1px solid #ffffff;
+
+    &--transparent {
+      width: auto;
+      margin-left: -6px;
+
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 400;
+      background: transparent;
+    }
+  }
+}

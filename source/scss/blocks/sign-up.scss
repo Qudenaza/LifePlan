@@ -1,0 +1,62 @@
+.sign-up {
+  min-height: 332px;
+  padding: 20px 0;
+
+  &__container {
+    display: flex;
+    max-width: 887px;
+    margin: 0 auto;
+  }
+
+  &__col {
+    padding-top: 100px;
+  }
+
+  &__content {
+    max-width: 330px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3d4f9f;
+  }
+
+  &__text {
+    margin-top: 16px;
+
+    letter-spacing: 0.4px;
+    line-height: 1.9;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #8d96bd;
+  }
+
+  &__input {
+    width: 279px;
+    padding: 21px 23px 21px 23px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 5px;
+    border: none;
+    background: #efeff7;
+  }
+
+  &__form {
+    display: flex;
+    padding: 19px 0 0 80px;
+  }
+
+  &__button {
+    width: 184px;
+    margin-left: 14px;
+
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #4d6ce1;
+    box-shadow: 0 5px 15px 0 rgba(116, 104, 255, 0.2);
+  }
+}

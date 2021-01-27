@@ -1,0 +1,107 @@
+.promo {
+  height: 570px;
+  background: url("../img/promo-background.jpg") no-repeat;
+  background-position: center;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+  }
+
+  &__content {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-top: 82px;
+
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 16px;
+  }
+
+  &__text {
+    max-width: 471px;
+    margin: 24px auto 0 auto;
+  }
+
+  &__button {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    margin-top: 18px;
+
+    border: none;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 10px 50px 0 rgba(#c9d1e7, 0.6);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 5px 40px 5px rgba(#c9d1e7, 1);
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 11px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background: url("../img/icon-triangle.svg") no-repeat;
+    }
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      transform: translateY(1px);
+      outline: none;
+      box-shadow: 0 5px 50px 0 rgba(#c9d1e7, 1);
+    }
+  }
+
+  &__controls {
+    bottom: 26px !important;
+  }
+
+  &__bullet {
+    margin: 0 6px !important;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #3d4f9f;
+  text-transform: uppercase;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 1.9;
+  color: #8d96bd;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 300;
+  color: #3d4f9f;
+
+  & b {
+    font-weight: 600;
+  }
+}

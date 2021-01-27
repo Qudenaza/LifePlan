@@ -1,0 +1,77 @@
+.stats {
+  display: flex;
+
+  min-height: 342px;
+
+  &__col {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    width: 50%;
+
+    &--left {
+      padding-right: 90px;
+
+      background: #5e80ff;
+
+      & .stats__content {
+        margin-left: auto;
+
+        text-align: right;
+        color: #ffffff;
+
+        &::before {
+          width: 66px;
+          height: 69px;
+          right: 0;
+          background: url("../img/stats-customers.svg") no-repeat;
+        }
+      }
+    }
+
+    &--right {
+      padding-left: 90px;
+
+      background: #d8e3fe;
+
+      & .stats__content {
+        margin-right: auto;
+
+        color: #5e80ff;
+        text-align: left;
+
+        &::before {
+          width: 75px;
+          height: 62px;
+          left: 0;
+          background: url("../img/stats-users.svg") no-repeat;
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 260px;
+    padding-top: 90px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+    }
+  }
+
+  &__count {
+    font-size: 48px;
+    font-weight: 400;
+  }
+
+  &__text {
+    margin-top: 13px;
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+}

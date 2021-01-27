@@ -1,0 +1,33 @@
+.page-header {
+  min-height: 82px;
+
+  background-color: #ffffff;
+  border-bottom: 1px solid #f4f7ff;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 20px 117px;
+  }
+
+  &__button {
+    width: 113px;
+    margin-left: 42px;
+
+    text-align: center;
+    background: #d2e1ff;
+    color: #3a79ff;
+
+    &:hover {
+      background: #3a79ff;
+      color: #d2e1ff;
+    }
+
+    &:focus {
+      opacity: 0.6;
+    }
+  }
+}

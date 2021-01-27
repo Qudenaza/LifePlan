@@ -1,0 +1,155 @@
+.about-us {
+  min-height: 887px;
+
+  &__container {
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 166px;
+
+    text-align: center;
+    background: url("../img/about-us-clouds.png") no-repeat;
+  }
+
+  &__content {
+    margin-top: 90px;
+  }
+
+  &__heading {
+    font-size: 10px;
+  }
+
+  &__title {
+    margin-top: 19px;
+
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    width: 140px;
+    padding-top: 105px;
+
+    &:not(:last-child) {
+      margin-right: 69px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 28px;
+        height: 1px;
+        top: 50%;
+        right: -50%;
+        transform: translate(-50%, -50%);
+
+        background: #dae4fe;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 69px;
+      height: 69px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      border-radius: 50%;
+    }
+
+    &--files::before {
+      background: url("../img/icon-files.svg"), #f1f5ff;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--chats::before {
+      background: url("../img/icon-chats.svg"), #f1f5ff;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--events::before {
+      background: url("../img/icon-save.svg"), #f1f5ff;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--overview::before {
+      background: url("../img/icon-overview.svg"), #f1f5ff;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__label {
+    color: #4074f8;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+  }
+
+  &__text {
+    margin-top: 30px;
+
+    font-size: 11px;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 337px;
+    margin: 114px auto 0 auto;
+  }
+
+  &__span {
+    position: relative;
+
+    color: #adb3cb;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 1px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      background: #dae4fe;
+    }
+
+    &::before {
+      left: -30px;
+    }
+
+    &::after {
+      right: -30px;
+    }
+  }
+
+  &__button {
+    width: 113px;
+
+    color: #d43f3f;
+    background: #ffd7d7;
+
+    &--blue {
+      color: #3a79ff;
+      background: #d2e1ff;
+    }
+  }
+}
